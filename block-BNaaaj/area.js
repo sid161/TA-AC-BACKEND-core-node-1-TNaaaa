@@ -6,7 +6,12 @@ function areaRect(l,b){
     return l * b;
 }
 
+function circle(r){
+    return 2 * 3.14 * r;
+}
+
 module.exports = {
-    areaSquare: (n) => { n * n}
-    
+    areaSquare: areaSquare,
+    areaRect: areaRect,
+    circle: circle
 }

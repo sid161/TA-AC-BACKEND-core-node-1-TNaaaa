@@ -19,7 +19,7 @@ fs.unlink('./index.md', (error,content) => {
 })
 
 var buffer = Buffer.alloc(12);
-console.log(buffer.toString());
+console.log(buffer.write("hello i am siddharth"));
 
 // non -blocking async
 console.log('hello');
