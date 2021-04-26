@@ -3,7 +3,7 @@ var server = http.createServer(handleRequest)
 
 function handleRequest(req,res){
     console.log(req.headers);
-    res.user-agent
+    res.end(req.headers['user-agent']);
 
 }
 
