@@ -3,7 +3,7 @@ var server = http.createServer(handleRequest)
 
 function handleRequest(req,res){
     res.setHeader('Content-Type', 'application/JSON')
-    res.end({success: true, message: 'Welcome to Nodejs'});
+    res.end(JSON.stringify({success: true, message: 'Welcome to Nodejs'}));
 }
 
 server.listen(8888, () => {

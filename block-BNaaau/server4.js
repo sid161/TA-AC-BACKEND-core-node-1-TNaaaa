@@ -5,7 +5,7 @@ var server =  http.createServer(handleRequest)
 function handleRequest(req,res){
     console.log(req.method,req.url);
     res.setWrite("Content-type","plain/text")
-    res.end()
+    res.end(req.mthod + req.url);
 }
 
 server.listen(5566, () => {

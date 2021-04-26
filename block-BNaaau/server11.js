@@ -6,10 +6,10 @@ function handleRequest(req,res){
         res.setHeader("Content-Type", "text/plain")
         res.end("Siddharth")
     } else if(req.method === "GET" && req.url === '/about'){
-        res.setHeader("Content-Type", req.url = '/about')
+        res.setHeader("Content-Type", "text/html")
         res.end('<h2>Siddharth</h2>')
     } else {
-        res.console.error();
+        res.end("page not found");
     }
 
 }
